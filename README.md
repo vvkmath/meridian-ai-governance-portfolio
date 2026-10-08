@@ -55,50 +55,54 @@
 ## Screenshots
 
 ### 1. Use case
-![Use case](screenshots/01_use_case.png)
+![Use case](01_use_case.PNG)
 This screenshot shows the Meridian Automated Loan Underwriting System registered as a high-risk AI use case in VerifyWise, with applicable frameworks, approval workflow, and pre-production governance status.
 
 ### 2. Dataset
-![Dataset](screenshots/02_dataset.png)
+![Dataset](02_dataset.PNG)
 This screenshot shows the Small Business Loan Underwriting Dataset registered in VerifyWise, including data purpose, source, format, PII status, known bias concerns, mitigation approach, and connection to the CrediSure Credit Decision Engine and Meridian Automated Loan Underwriting System.
 
 ### 3. Risk register
-![Risks](screenshots/03_risks.png)
+![Risks](03_risks.PNG)
 This screenshot shows the six required risks for the Meridian Automated Loan Underwriting System, including risks imported from IBM AI Risk Database, MIT AI Risk Repository, and manually created custom risks.
 
 ### 4. Training registry
-![Training](screenshots/04_training.png)
+![Training](04_training.PNG)
 This screenshot shows the AI training registry record for the Meridian Automated Loan Underwriting System, documenting planned governance training for stakeholders responsible for compliance, model risk, credit risk, human oversight, vendor risk, and executive approval.
 
 ### 5. Vendor
-![Vendor](screenshots/05_vendor.png)
+![Vendor](05_vendor.PNG)
 This screenshot shows the CrediSure AI vendor record in VerifyWise, documenting the third-party provider responsible for the credit decisioning model used by the Meridian Automated Loan Underwriting System.
 
 ### 6. Policies
-![Policies](screenshots/06_policies.png)
+![Policies](06_policies.PNG)
 This screenshot shows the three core organizational AI policies selected for the Meridian Automated Loan Underwriting System: AI Governance Policy, AI Risk Management Policy, and AI Vendor Risk Policy. These policies establish the minimum governance, risk management, and third-party oversight structure for the high-risk AI portfolio.
 
 ### 7. ISO/IEC 42001 Annex controls
-![ISO 42001 annexes](screenshots/07_iso_annexes.png)
+![ISO 42001 annexes A5](07a_iso_annexes_A5.PNG)
+
+![ISO 42001 annexes A8](07b_iso_annexes_A8.PNG)
+
+![ISO 42001 annexes A11](07c_iso_annexes_A11.PNG)
 This screenshot shows the three must-have ISO 42001 Annex controls completed for the Meridian Automated Loan Underwriting System: AI governance framework, AI system lifecycle management, and third-party AI risk management.
 
 ### 8. NIST AI RMF
-![NIST AI RMF](screenshots/08_nist.png)
+![NIST AI RMF](08_nist.PNG)
 This screenshot shows the four must-have NIST AI RMF subfunctions completed for the Meridian Automated Loan Underwriting System, covering human-AI oversight roles, system context, evaluation evidence, and prioritized AI risk treatment.
 
 ### 9. EU AI Act FRIA
-![FRIA](screenshots/09_fria.png)
+![FRIA](09_fria.PNG)
 This screenshot shows the EU AI Act FRIA summary for the Meridian Automated Loan Underwriting System, including stakeholder consultation status, flagged rights, risk score, and conditional approval recommendation.
 
 ## Evidence pack
 
 | Document | Purpose |
 |---|---|
-| [AI System Profile and Governance Intake Record](evidence/1.%20AI%20Governance%20Intake%20Record.docx) | System scope, roles, data, intended use |
-| [Third-Party Model and Vendor Governance Review](evidence/2.%20Vendor%20Model%20Governance%20Review.docx) | CrediSure AI due diligence and gaps |
-| [AI Risk Register and Mitigation Summary](evidence/3.%20AI%20Risk%20Register%20Mitigation%20Summary.docx) | Six priority risks, treatments, residual risk |
-| [Human Oversight, Exception Review, and Applicant Appeal Procedure](evidence/4.%20Human%20Oversight%20Appeal%20Procedure.docx) | Review triggers, reviewer authority, appeals, pause criteria |
-| [AI Governance Production Readiness Decision Memo](evidence/5.%20AI%20Governance%20Production%20Readiness%20Decision%20Memo.docx) | Conditional approval decision and conditions |
+| [AI System Profile and Governance Intake Record](1.%20AI%20Governance%20Intake%20Record.docx) | System scope, roles, data, intended use |
+| [Third-Party Model and Vendor Governance Review](2.%20Vendor%20Model%20Governance%20Review.docx) | CrediSure AI due diligence and gaps |
+| [AI Risk Register and Mitigation Summary](3.%20AI%20Risk%20Register%20Mitigation%20Summary.docx) | Six priority risks, treatments, residual risk |
+| [Human Oversight, Exception Review, and Applicant Appeal Procedure](4.%20Human%20Oversight%20Appeal%20Procedure.docx) | Review triggers, reviewer authority, appeals, pause criteria |
+| [AI Governance Production Readiness Decision Memo](5.%20AI%20Governance%20Production%20Readiness%20Decision%20Memo.docx) | Conditional approval decision and conditions |
 | [Final VerifyWise report (PDF)](Vivek_Korikanthimath_AI_Governance_Portfolio_Report.pdf) | Generated use case report |
 
 ## Skills demonstrated
