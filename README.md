@@ -1,113 +1,230 @@
-# AI Governance Portfolio: Meridian Automated Loan Underwriting System
+# Cyber Pros AI Governance Portfolio Project: Automated Loan Underwriting System (Vivek Korikanthimath)
 
-**Author:** Vivek Korikanthimath · **Role:** AI Governance, Risk & Compliance Practitioner (portfolio project) · **Platform:** VerifyWise · **Date:** October 2026
+## Executive Summary
 
-> Meridian Financial Services is a fictional mid-sized lender. All organizations, systems, vendors and data in this project are fictional and used for educational purposes only.
+I served as the **AI Governance Lead** for a fictional high-risk AI governance assessment involving Meridian Financial Services, a mid-sized financial services company piloting an automated loan underwriting system.
 
-## The governance question
+The system uses a third-party AI model, **CrediSure Credit Decision Engine v2.3**, to evaluate small business loan applications and produce one of three outcomes:
 
-**Should Meridian Financial Services approve production deployment of a 94% automated AI loan underwriting system?**
+- Auto-approve
+- Auto-deny
+- Route to manual review
 
-**Recommendation: Proceed with conditions.** Meridian should not approve unrestricted production deployment until the required fairness, explainability, human oversight, vendor, monitoring, privacy/security and governance controls are completed and evidenced. A limited, controlled pilot may follow once those conditions are met.
+Because approximately **94% of applications are processed automatically** and the system affects access to credit, I classified this as a **high-risk AI use case** requiring governance review before production deployment.
 
-## The system
+My final recommendation was:
 
-| | |
+> **Proceed with conditions. Meridian should not approve unrestricted production deployment until fairness testing, proxy-bias review, reason code validation, human oversight triggers, appeal procedures, vendor evidence review, monitoring thresholds, and governance committee approval are completed.**
+
+<img alt="EU AI Act FRIA summary" src="09_fria.PNG" />
+
+> **Caption:** This screenshot shows the EU AI Act FRIA summary for the Meridian Automated Loan Underwriting System, including stakeholder consultation status, flagged rights, risk score, and conditional approval recommendation.
+
+## Frameworks Applied
+
+| EU AI Act | NIST AI Risk Management Framework | ISO/IEC 42001 |
+|---|---|---|
+| High-risk AI classification | Governance roles and responsibilities | AI management system scope |
+| Fundamental Rights Impact Assessment | System context and intended use | Organizational roles and responsibilities |
+| Human oversight| Risk measurement and testing evidence | AI risk assessment |
+| Logging | Risk prioritization and treatment | AI risk treatment |
+| Explanation to affected persons | Human-AI oversight | Management review |
+| Fundamental Rights Impact Assessment | | AI system lifecycle management |
+| Appeal and contestability| | Third-party AI risk management |
+| Deployment conditions | | |
+
+This portfolio demonstrates my ability to perform practical AI governance work for a high-risk AI system.
+
+Specifically, this project shows that I can:
+
+- Lead an AI governance review for a high-risk AI use case
+- Document an AI system profile and governance intake record
+- Identify and assess AI risks related to fairness, explainability, automation, vendor risk, and human oversight
+- Apply EU AI Act, NIST AI RMF, and ISO/IEC 42001 concepts in a practical way
+- Review third-party AI model and vendor governance concerns
+- Design human oversight, exception review, and appeal procedures
+- Prepare an executive-ready production readiness recommendation
+- Use AI governance tooling to organize evidence, risks, policies, and framework assessments
+
+---
+
+## Central Governance Question
+
+This portfolio answers one central question:
+
+> **Should Meridian Financial Services approve production deployment of a 94% automated AI loan underwriting system?**
+
+My answer:
+
+> **Not for unrestricted production deployment. The system may proceed only with conditions because the current governance evidence does not fully support safe, fair, explainable, accountable, and well-monitored deployment.**
+
+## Portfolio Artifacts
+
+| Artifact | Purpose | Link |
+|---|---|---|
+| AI System Profile and Intake Record | Documents system purpose, users, affected groups, data, vendor, and risk classification. | [View Artifact](1.%20AI%20Governance%20Intake%20Record.docx) |
+| AI Risk Register and Mitigation Summary | Documents key AI risks, severity, controls, residual risk, and recommendations. | [View Artifact](3.%20AI%20Risk%20Register%20Mitigation%20Summary.docx) |
+| Human Oversight and Appeal Procedure | Defines human review triggers, override authority, escalation, and applicant appeal process. | [View Artifact](4.%20Human%20Oversight%20Appeal%20Procedure.docx) |
+| Third-Party Vendor and Model Review | Evaluates CrediSure AI vendor risk, model limitations, and required evidence. | [View Artifact](2.%20Vendor%20Model%20Governance%20Review.docx) |
+| Production Readiness Decision Memo | Provides final executive recommendation. | [View Artifact](5.%20AI%20Governance%20Production%20Readiness%20Decision%20Memo.docx) |
+| Final VerifyWise Portfolio Report | Consolidated portfolio report generated from VerifyWise. | [View Report](Vivek_Korikanthimath_AI_Governance_Portfolio_Report.pdf) |
+
+---
+
+## Practical AI governance Skill Proof (Screenshots)
+
+### 1. Use Case Registration
+
+<img alt="Use case registration" src="01_use_case.PNG" />
+
+> **Caption:** This screenshot shows the Meridian Automated Loan Underwriting System registered as a high-risk AI use case in VerifyWise.
+
+**Skill demonstrated:** AI use case intake, risk classification, and governance workflow setup.
+
+---
+
+### 2. Model Inventory
+
+<img alt="Model inventory" src="10_model.PNG" />
+
+> **Caption:** This screenshot shows the CrediSure Credit Decision Engine v2.3 documented in the model inventory.
+
+**Skill demonstrated:** Model inventory documentation, model limitation tracking, and third-party AI model governance.
+
+---
+
+### 3. Dataset Record
+
+<img alt="Dataset record" src="02_dataset.PNG" />
+
+> **Caption:** This screenshot shows the Small Business Loan Underwriting Dataset documented with data purpose, source, PII status, known bias concerns, and mitigation approach.
+
+**Skill demonstrated:** Dataset governance, PII awareness, data source documentation, and bias mitigation planning.
+
+---
+
+### 4. AI Risk Register
+
+<img alt="AI risk register" src="03_risks.PNG" />
+
+> **Caption:** This screenshot shows the six priority AI risks documented for the Meridian Automated Loan Underwriting System.
+
+**Skill demonstrated:** AI risk identification, risk rating, mitigation planning, residual risk analysis, and approval workflow documentation.
+
+## Key Risks Identified
+
+| Risk | Why It Matters |
 |---|---|
-| System | Meridian Automated Loan Underwriting System |
-| Vendor model | CrediSure Credit Decision Engine v2.3 (CrediSure AI) |
-| Purpose | Faster, more consistent small business loan decisions |
-| Outputs | Auto-approve · Auto-deny · Route to manual review |
-| Automation | ~94% of applications decided automatically; ~6% reach a human |
-| Classification | **High risk**: affects access to credit (EU AI Act Annex III, point 5) |
+| Discriminatory lending outcomes | The system may unfairly approve or deny applicants based on biased data, proxy variables, or historical lending patterns. |
+| Proxy bias through credit and business variables | Variables such as geography, business age, industry, credit history, thin credit files, or cash-flow volatility may create unfair outcomes. |
+| Weak explainability and incomplete reason codes | Meridian may be unable to explain automated denials, support appeals, or demonstrate compliance during review. |
+| Accountability gaps in third-party AI deployment | Meridian remains responsible for deployment even if the vendor controls key model details. |
+| Inaccurate automated denials | Qualified applicants may be incorrectly denied credit due to model error, incomplete data, or overly strict thresholds. |
+| Lack of meaningful human oversight | Routing only 6% of applications to human review may be insufficient for a high-risk credit decision system. |
 
-## Frameworks applied
+---
 
-| Framework | Used for |
-|---|---|
-| **EU AI Act** | High-risk classification, Fundamental Rights Impact Assessment (FRIA), human oversight, logging, explanations to affected persons, appeals, CE marking steps |
-| **NIST AI RMF** | GOVERN (oversight roles), MAP (system context), MEASURE (evaluation evidence), MANAGE (risk prioritization and treatment) |
-| **ISO/IEC 42001** | AIMS scope (4.3), roles (5.3), risk assessment (6.1.2), risk treatment (6.1.3), management review (9.3), Annex A.5, A.8, A.11 |
+### 5. Vendor Record
 
-## Top risks
+<img alt="Vendor record" src="05_vendor.PNG" />
 
-| Risk | Current level |
-|---|---|
-| Lack of meaningful human oversight | Very high |
-| Discriminatory lending outcomes | Very high |
-| Proxy bias through credit and business variables | High |
-| Weak explainability and incomplete reason codes | High |
-| Inaccurate automated denials | High |
-| Accountability gaps in third-party AI deployment | High |
+> **Caption:** This screenshot shows the CrediSure AI vendor record documenting the third-party provider responsible for the credit decisioning model.
 
-**Biggest concern:** human oversight. Only about 6% of applications reach a person, and combined with proxy-bias risk, applicants could be unfairly denied credit without a clear explanation or a realistic way to appeal.
+**Skill demonstrated:** Third-party AI vendor risk management and vendor governance documentation.
 
-## Conditions before production
+---
 
-1. Fairness and disparate impact testing
-2. Denial reason code validation
-3. Human review triggers and a working appeal process
-4. Vendor documentation review (CrediSure AI)
-5. Security and privacy review
-6. Monitoring thresholds and incident escalation
-7. Governance committee and executive approval
+### 6. Framework Assessments
 
-## Screenshots
+<img alt="ISO 42001 Annex A5" src="07a_iso_annexes_A5.PNG" />
+<img alt="ISO 42001 Annex A8" src="07b_iso_annexes_A8.PNG" />
+<img alt="ISO 42001 Annex A11" src="07c_iso_annexes_A11.PNG" />
 
-### 1. Use case
-![Use case](01_use_case.PNG)
-This screenshot shows the Meridian Automated Loan Underwriting System registered as a high-risk AI use case in VerifyWise, with applicable frameworks, approval workflow, and pre-production governance status.
+> **Caption:** This screenshot shows selected framework assessment progress for NIST AI RMF, ISO/IEC 42001, and EU AI Act governance requirements.
 
-### 2. Dataset
-![Dataset](02_dataset.PNG)
-This screenshot shows the Small Business Loan Underwriting Dataset registered in VerifyWise, including data purpose, source, format, PII status, known bias concerns, mitigation approach, and connection to the CrediSure Credit Decision Engine and Meridian Automated Loan Underwriting System.
+**Skill demonstrated:** Practical framework application and evidence-based AI governance assessment.
 
-### 3. Risk register
-![Risks](03_risks.PNG)
-This screenshot shows the six required risks for the Meridian Automated Loan Underwriting System, including risks imported from IBM AI Risk Database, MIT AI Risk Repository, and manually created custom risks.
+---
 
-### 4. Training registry
-![Training](04_training.PNG)
-This screenshot shows the AI training registry record for the Meridian Automated Loan Underwriting System, documenting planned governance training for stakeholders responsible for compliance, model risk, credit risk, human oversight, vendor risk, and executive approval.
+### 7. Fundamental Rights Impact Assessment (FRIA) Summary
 
-### 5. Vendor
-![Vendor](05_vendor.PNG)
-This screenshot shows the CrediSure AI vendor record in VerifyWise, documenting the third-party provider responsible for the credit decisioning model used by the Meridian Automated Loan Underwriting System.
+<img alt="FRIA summary" src="09_fria.PNG" />
 
-### 6. Policies
-![Policies](06_policies.PNG)
-This screenshot shows the three core organizational AI policies selected for the Meridian Automated Loan Underwriting System: AI Governance Policy, AI Risk Management Policy, and AI Vendor Risk Policy. These policies establish the minimum governance, risk management, and third-party oversight structure for the high-risk AI portfolio.
+> **Caption:** This screenshot shows the EU AI Act Fundamental Rights Impact Assessment summary for the Meridian Automated Loan Underwriting System.
 
-### 7. ISO/IEC 42001 Annex controls
-![ISO 42001 annexes A5](07a_iso_annexes_A5.PNG)
+**Skill demonstrated:** Fundamental rights risk assessment, high-risk AI review, human oversight analysis, and conditional deployment recommendation.
 
-![ISO 42001 annexes A8](07b_iso_annexes_A8.PNG)
+---
 
-![ISO 42001 annexes A11](07c_iso_annexes_A11.PNG)
-This screenshot shows the three must-have ISO 42001 Annex controls completed for the Meridian Automated Loan Underwriting System: AI governance framework, AI system lifecycle management, and third-party AI risk management.
+### 8. Final Report
 
-### 8. NIST AI RMF
-![NIST AI RMF](08_nist.PNG)
-This screenshot shows the four must-have NIST AI RMF subfunctions completed for the Meridian Automated Loan Underwriting System, covering human-AI oversight roles, system context, evaluation evidence, and prioritized AI risk treatment.
+[Vivek_Korikanthimath_AI_Governance_Portfolio_Report.pdf](Vivek_Korikanthimath_AI_Governance_Portfolio_Report.pdf)
 
-### 9. EU AI Act FRIA
-![FRIA](09_fria.PNG)
-This screenshot shows the EU AI Act FRIA summary for the Meridian Automated Loan Underwriting System, including stakeholder consultation status, flagged rights, risk score, and conditional approval recommendation.
+**Skill demonstrated:** Governance evidence organization and final reporting.
 
-## Evidence pack
+## Final Recommendation
 
-| Document | Purpose |
-|---|---|
-| [AI System Profile and Governance Intake Record](1.%20AI%20Governance%20Intake%20Record.docx) | System scope, roles, data, intended use |
-| [Third-Party Model and Vendor Governance Review](2.%20Vendor%20Model%20Governance%20Review.docx) | CrediSure AI due diligence and gaps |
-| [AI Risk Register and Mitigation Summary](3.%20AI%20Risk%20Register%20Mitigation%20Summary.docx) | Six priority risks, treatments, residual risk |
-| [Human Oversight, Exception Review, and Applicant Appeal Procedure](4.%20Human%20Oversight%20Appeal%20Procedure.docx) | Review triggers, reviewer authority, appeals, pause criteria |
-| [AI Governance Production Readiness Decision Memo](5.%20AI%20Governance%20Production%20Readiness%20Decision%20Memo.docx) | Conditional approval decision and conditions |
-| [Final VerifyWise report (PDF)](Vivek_Korikanthimath_AI_Governance_Portfolio_Report.pdf) | Generated use case report |
+My final recommendation is:
 
-## Skills demonstrated
+> **Proceed with conditions.**
 
-AI governance review · high-risk AI classification · AI risk identification · risk register development · vendor AI risk review · dataset and model inventory documentation · human oversight design · AI framework mapping (EU AI Act, NIST AI RMF, ISO/IEC 42001) · FRIA · production readiness assessment · executive communication
+Meridian should not approve unrestricted production deployment at this time.
+
+The system may move forward only if the following conditions are completed:
+
+- Complete fairness testing and disparate impact analysis
+- Complete proxy-bias review
+- Validate denial reason codes
+- Define mandatory human review triggers
+- Establish appeal and reconsideration procedures
+- Complete vendor documentation review
+- Complete security and privacy review
+- Define model and outcome monitoring thresholds
+- Implement decision-level audit logging
+- Establish incident escalation procedures
+- Obtain governance committee approval
+
+---
+
+## Portfolio Conclusion
+
+This project demonstrates my ability to evaluate a high-risk AI system from an AI governance, risk, and compliance perspective.
+
+The Meridian Automated Loan Underwriting System offers business benefits, including faster decisions, improved consistency, and operational efficiency. However, because it affects access to credit and automates most decisions, it requires strong governance before deployment.
+
+As AI Governance Lead, my assessment found that the system should not receive unrestricted production approval until Meridian completes required fairness, explainability, human oversight, vendor, monitoring, privacy, and governance controls.
+
+This project reflects how I would support responsible AI deployment in a real organization.
+
+---
+
+## Disclaimer
+
+This is a fictional educational portfolio project created for AI governance, risk, and compliance training. It does not represent legal advice, regulatory certification, credit decisioning advice, or an actual assessment of a real financial institution.
+
+---
+
+## Additional Screenshots
+
+### Training Registry
+
+<img alt="Training registry" src="04_training.PNG" />
+
+> **Caption:** This screenshot shows the AI training registry record for the Meridian Automated Loan Underwriting System, documenting planned governance training for stakeholders responsible for compliance, model risk, credit risk, human oversight, vendor risk, and executive approval.
+
+### Policies
+
+<img alt="Policies" src="06_policies.PNG" />
+
+> **Caption:** This screenshot shows the three core organizational AI policies selected for the Meridian Automated Loan Underwriting System: AI Governance Policy, AI Risk Management Policy, and AI Vendor Risk Policy. These policies establish the minimum governance, risk management, and third-party oversight structure for the high-risk AI portfolio.
+
+### NIST AI RMF
+
+<img alt="NIST AI RMF" src="08_nist.PNG" />
+
+> **Caption:** This screenshot shows the four must-have NIST AI RMF subfunctions completed for the Meridian Automated Loan Underwriting System, covering human-AI oversight roles, system context, evaluation evidence, and prioritized AI risk treatment.
+
+---
 
 ## Notes on platform limitations
 
